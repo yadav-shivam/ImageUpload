@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_3sdp"
+    android:id="@+id/cv_grid_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:scaleType="centerCrop"
+            />
+
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

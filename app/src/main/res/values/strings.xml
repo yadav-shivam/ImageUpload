@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ImageUpload</string>
+    <string name="camera_storage_record_permission">We need permission to access camera, storage and recorder mic</string>
+    <string name="uploading">Uploading...</string>
+
+</resources>

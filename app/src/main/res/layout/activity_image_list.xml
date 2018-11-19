@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:theme="@style/ProgressLight"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uploading"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+
+            />
+
+    </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_progress"
+
+            />
+
+
+    <TextView
+        android:id="@+id/tv_no_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/_16ssp"
+        android:text="No pictures found . Tap on add button to add some."
+        android:layout_gravity="center"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_25sdp"
+        android:visibility="visible"
+
+        />
+
+
+</RelativeLayout>
